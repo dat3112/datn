@@ -31,7 +31,7 @@ class ProductController extends Controller
     {
         $data = Product::all();
         $category= Category::all();
-        return view('frontend.profile',['dat'=>$data, 'category' =>$category]);
+        return view('admin.product.create',['dat'=>$data, 'category' =>$category]);
     }
 
     /**
@@ -144,7 +144,7 @@ class ProductController extends Controller
         $product->user_id = $request->input('user_id');
         $product->category_id = $request->input('category_id');
         $product->name = $request->input('name');
-       
+
 
         if($request->hasFile('new_image')) {   //kiem tra xem file imagecos được chọn hay ko
             // xoa file cu
@@ -190,9 +190,11 @@ class ProductController extends Controller
         //
     }
 
-    public function CPost(Request $request)
+    public function storePost(Request $request)
     {
+
         {
+
             // khoi tao model
             $product = new Product();
             $product->user_id = $request->input('user_id');

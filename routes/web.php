@@ -38,11 +38,10 @@ Route::get('signin', 'Ccontroller@signin')->name('signin');
 Route::get('logout','CController@logout');
 Route::get('profile', 'Ccontroller@profile')->name('profile');
 
-Route::get('profile/creatProduct', 'ProductController@CPost')->name('creatProduct');
+Route::post('profile/storeProduct', 'ProductController@storePost')->name('storeProduct');
 
 
 
 
 
 Route::post('signin','Ccontroller@postSignin');
-Route::post('productPost','ProductController@CPost');   

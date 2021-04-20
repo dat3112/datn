@@ -154,7 +154,7 @@
 							<div class="tab-pane container fade" id="menu1">
 								<div class="border-post">
 									<div class="post">
-										<form id="signupform" action="/tai-khoan" class="form-horizontal ng-pristine ng-valid" method="post" role="form" novalidate="novalidate">        
+										<form id="signupform" action="" class="form-horizontal ng-pristine ng-valid" method="post" role="form" novalidate="novalidate">        
 											<div class="form-group">
 												<div class="col-md-12">
 													<h3 style="margin:0">Tạo Bài Viết</h3>
